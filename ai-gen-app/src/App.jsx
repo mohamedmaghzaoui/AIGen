@@ -1,11 +1,12 @@
 import aigenImage from './assets/Try our AiGen.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
+import { Form } from './components/form'
 
 function App() {
   return (
     <>
-      <div className="d-flex flex-column align-items-center text-center">
+      <div className="d-flex flex-column align-items-center ">
         <img
           className="img-fluid w-25 mt-5 mb-4"
           src={aigenImage}
@@ -15,7 +16,7 @@ function App() {
           Reach out, and create a universe of possibilities together!
         </p>
         <div className="main-content border rounded">
-          <h1 className="text-white">hi how are you</h1>
+          <Form />
         </div>
       </div>
     </>
