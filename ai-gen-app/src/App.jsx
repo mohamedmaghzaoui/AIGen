@@ -2,6 +2,7 @@ import aigenImage from './assets/Try our AiGen.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { Form } from './components/form'
+import { Data } from './components/data'
 
 function App() {
   return (
@@ -15,8 +16,13 @@ function App() {
         <p className="initial-text fs-5">
           Reach out, and create a universe of possibilities together!
         </p>
-        <div className="main-content border rounded">
-          <Form />
+        <div className="main-content w-75 border rounded row">
+          <div className="col-6">
+            <Form />
+          </div>
+          <div className="col">
+            <Data />
+          </div>
         </div>
       </div>
     </>

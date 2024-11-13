@@ -1,13 +1,9 @@
 .initial-text {
-  color: #cdd3d6;
+  color: #b2becd;
 }
 .main-content {
   box-sizing: border-box;
 
-  width: 1092px;
-  height: 576px;
-  left: 192px;
-  top: 267px;
   background: rgba(255, 255, 255, 0.04);
   border: 2px solid rgba(10, 13, 23, 0.05);
   backdrop-filter: blur(

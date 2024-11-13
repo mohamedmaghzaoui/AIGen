@@ -1,14 +1,12 @@
-.custom-input {
+.custom-span {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 12px 14px;
   gap: 10px;
-
-  width: 206px;
-  height: 42px;
-
+  font-weight: bold;
+  color: #b2becd;
   background: rgba(255, 255, 255, 0.05) !important;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 5px;
@@ -17,4 +15,5 @@
   flex: none;
   order: 0;
   flex-grow: 1;
+  overflow: hidden;
 }
