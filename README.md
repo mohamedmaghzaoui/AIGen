@@ -93,7 +93,7 @@ I welcome contributions! If you have ideas, improvements, or bug fixes, feel fre
 
 If you have any questions or feedback, feel free to reach out to me:
 
-- Email: [mohamedmaghzaoui53@gmail.com](mohamedmaghzaoui53@gmail.com)
+- Email: [mohamedmaghzaoui53@gmail.com](mailto:mohamedmaghzaoui53@gmail.com)
 - GitHub: [mohamedmaghzaoui](https://github.com/mohamedmaghzaoui)
 
 
