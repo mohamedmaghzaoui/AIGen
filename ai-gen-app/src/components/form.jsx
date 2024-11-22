@@ -1,4 +1,5 @@
 import './form.css'
+import { Popup } from './popup'
 export const Form = () => {
   return (
     <div className="ms-5 mt-5 row">
@@ -10,7 +11,13 @@ export const Form = () => {
         </p>
         <div className="row">
           <div className="col-4 ">
-            <span className="custom-span h-75 fs-5">user</span>
+            <span
+              style={{ cursor: 'pointer' }}
+              className="custom-span h-75 fs-5"
+            >
+              user
+            </span>
+            <Popup />
           </div>
         </div>
       </div>
