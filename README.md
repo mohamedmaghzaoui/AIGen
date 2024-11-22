@@ -2,14 +2,14 @@
 
 Welcome to **AIGen** – the **AI-based Data Generation App**! 🚀
 
-AIGen allows you to generate complex JSON and YAML data structures using AI to power the creation process. Whether you need mock data for APIs or are building test cases, AIGen can generate data based on your input, making it flexible, dynamic, and quick. 
+AIGen allows you to generate complex JSON and YAML data structures using AI to power the creation process. Whether you need mock data for APIs or building test cases, AIGen can generate data based on your input, making it flexible, dynamic, and quick. 
 
 ---
 
 ## 🛠 Project Status
 
 **Currently in Development**  
-AIGen is actively being developed, and im  continuously working on new features, improvements, and bug fixes.
+AIGen is actively being developed, and I'm continuously working on new features, improvements, and bug fixes.
 
 ---
 ### 🌟 Planned Features:
@@ -63,7 +63,7 @@ Once the app is up and running, you can:
 
 Hi, I'm **Mohamed Maghzaoui**, a passionate software engineer with a wide range of expertise spanning from **web development** to **IoT**, **cloud**, and **networking technologies**. I am always excited to explore new opportunities, especially in the field of AI, and contribute to innovative projects like **AIGen**.
 
-My goal is to continue growing my development skills while building impactful applications, and I’m looking forward to pushing the boundaries of data generation with AI. 🔥
+My goal is to continue growing my development skills and build impactful applications, and I’m looking forward to pushing the boundaries of data generation with AI. 🔥
 
 🔗 [Portfolio](https://mohamedmaghzaoui.online/)  
 🔗 [Linkedin](https://www.linkedin.com/in/mohamed-maghzaoui-577044256/)  
@@ -101,7 +101,7 @@ If you have any questions or feedback, feel free to reach out to me:
 
 
 
-## 📅 Roadmap
+## 📅 Development Roadmap
 
 ### 🚧 In Progress:
 - Integrating AI for data generation.
