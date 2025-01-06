@@ -1,0 +1,3 @@
+# Ignore Django settings file containing sensitive data
+settings.py
+local_settings.py
