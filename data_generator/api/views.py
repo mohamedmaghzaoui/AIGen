@@ -40,7 +40,7 @@ def generate_json_data(request):
             # Extract the generated text from the OpenAI response
             generated_text = response.choices[0].message.content
 
-            # Assuming the generated response is valid JSON, return it as a JSON response
+            # return a JSON response
             try:
                 generated_data = json.loads(generated_text)
                 return JsonResponse(generated_data)
