@@ -52,7 +52,7 @@ def generate_json_data(request):
             generated_text = response.text
             
 
-            # Assuming the generated response is valid JSON, return it as a JSON response
+            # return a JSON response
             try:
                 generated_data = json.loads(generated_text)
                 return JsonResponse(generated_data)
