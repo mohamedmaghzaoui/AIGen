@@ -53,6 +53,45 @@
 .form-control::placeholder {
   color: rgba(255, 255, 255, 0.6); /* Slightly transparent placeholder */
 }
+/* Custom styles for the select element */
+.custom-select {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border */
+  color: #fff; /* White text */
+  font-size: 0.9rem;
+  padding: 10px 12px;
+  border-radius: 6px; /* Rounded corners */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  appearance: none; /* Remove default arrow */
+}
+
+/* On focus */
+.custom-select:focus {
+  border-color: #4caf50; /* Green focus border */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.7); /* Glow effect */
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+/* Placeholder (for the first option) */
+.custom-select option:first-child {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Custom styles for options */
+.custom-select option {
+  background: rgba(0, 0, 0, 0.8); /* Darker background for options */
+  color: #fff; /* White text */
+  padding: 10px;
+}
+
+/* Option hover effect */
+.custom-select option:hover {
+  background-color: rgba(76, 175, 80, 0.7); /* Green highlight */
+  color: #000; /* Black text */
+}
 
 /* Button Styles */
 .close {

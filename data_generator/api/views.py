@@ -1,13 +1,16 @@
 # views.py
 from django.http import JsonResponse, HttpResponseBadRequest
 from django.shortcuts import render
-import openai
+
 from django.conf import settings
 import json
 from django.views.decorators.csrf import csrf_exempt
-
-from openai import OpenAI
-client = OpenAI(api_key=settings.OPENAI_API_KEY)
+#gemeni ai api
+import google.generativeai as genai
+# open ai ai api
+# import openai
+# from openai import OpenAI
+# client = OpenAI(api_key=settings.OPENAI_API_KEY)
 # Home view
 def home(request):
     return JsonResponse({"message": "Welcome to the Data Generator API!"})
@@ -25,27 +28,36 @@ def generate_json_data(request):
             
             if not prompt:
                 return HttpResponseBadRequest("No prompt provided")
-
-            response = client.chat.completions.create(
-    model="gpt-3.5-turbo",
-    messages=[
-        {"role": "system", "content": "You are a helpful assistant."},
-        {
-            "role": "user",
-            "content": prompt
-        }
-    ]
-)
+            # gemini
+            genai.configure(api_key=settings.GEMINI_API_KEY)
+            model = genai.GenerativeModel("gemini-1.5-flash")
+            response = model.generate_content(prompt)
+            # open ai
+#             response = client.chat.completions.create(
+#     model="gpt-3.5-turbo",
+#     messages=[
+#         {"role": "system", "content": "You are a helpful assistant."},
+#         {
+#             "role": "user",
+#             "content": prompt
+#         }
+#     ]
+# )
+            
+            
+            
+            
 
             # Extract the generated text from the OpenAI response
-            generated_text = response.choices[0].message.content
+            generated_text = response.text
+            
 
             # Assuming the generated response is valid JSON, return it as a JSON response
             try:
                 generated_data = json.loads(generated_text)
                 return JsonResponse(generated_data)
             except json.JSONDecodeError:
-                return HttpResponseBadRequest("Generated text is not valid JSON")
+                return HttpResponseBadRequest(generated_data)
 
         except json.JSONDecodeError:
             return HttpResponseBadRequest("Invalid JSON format")

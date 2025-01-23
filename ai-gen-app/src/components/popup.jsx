@@ -13,13 +13,18 @@ export const Popup = ({ hidePopUp }) => {
         <h1 className="text-center text-white">user</h1>
 
         <form>
-          <div className="mb-5">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Field Type"
-            />
+          <div className="custom-select-wrapper mb-5 mt-3">
+            <select
+              className="form-select custom-select"
+              aria-label="Default select example"
+            >
+              <option selected>Fiel type</option>
+              <option value="1">String</option>
+              <option value="2">Number</option>
+              <option value="3">boolean</option>
+            </select>
           </div>
+
           <div className="mb-5">
             <input
               type="text"
