@@ -13,9 +13,7 @@ function App() {
           src={aigenImage}
           alt="Try our AiGen"
         />
-        <p className="initial-text fs-5">
-          Reach out, and create a universe of possibilities together!
-        </p>
+        <p className="initial-text fs-5">Design Your Data, Powered by AI</p>
         <div className="main-content w-75 border rounded row">
           <div className="col-6">
             <Form />

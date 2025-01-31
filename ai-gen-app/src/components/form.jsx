@@ -5,9 +5,7 @@ import { MdEdit } from 'react-icons/md'
 import { IoIosAddCircleOutline } from 'react-icons/io'
 
 export const Form = () => {
-  const [fields, setFields] = useState([
-    { id: 1, name: 'Field 1', value: '', children: [] },
-  ])
+  const [fields, setFields] = useState([{ id: 1, value: '', children: [] }])
   const [showPopUp, setshowPopUp] = useState(false)
   const [activeField, setActiveField] = useState(null)
   {
@@ -22,7 +20,6 @@ export const Form = () => {
   const addField = (parentId = null) => {
     const newField = {
       id: Date.now(),
-      name: `Field ${fields.length + 1}`,
       value: '',
       children: [],
     }
@@ -107,10 +104,10 @@ export const Form = () => {
   return (
     <div className="ms-5 mt-5 row">
       <div className="col">
-        <h3 className="text-light">Let's connect constellations</h3>
+        <h3 className="text-light">Let’s map your data universe!</h3>
         <p style={{ color: '#b2becd' }}>
-          Let's align our constellations! Reach out and let the magic of
-          collaboration illuminate our skies.
+          Easily create custom JSON structures with AI. Let’s transform your
+          ideas into clean, structured data—ready for your next big project!
         </p>
 
         <div className="row">{renderFields(fields)}</div>
